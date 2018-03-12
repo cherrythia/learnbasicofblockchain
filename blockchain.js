@@ -101,39 +101,39 @@ class Blockchain{
     }
 }
 
-let savjeeCoin = new Blockchain();
-savjeeCoin.createTransaction(new Transaction('address1', 'address2' , 100));
-savjeeCoin.createTransaction(new Transaction('address2', 'address1' , 50));
+let terryCoin = new Blockchain();
+terryCoin.createTransaction(new Transaction('address1', 'address2' , 100));
+terryCoin.createTransaction(new Transaction('address2', 'address1' , 50));
 
 console.log('\nStarting the miner....');
-savjeeCoin.minePendingTransactions('xavier-address');
+terryCoin.minePendingTransactions('terrychia-address');
 
-console.log('\nBalance of xavier is' , savjeeCoin.getBalanceOfAdress('xavier-address'));
-
-console.log('\nStarting the miner again....');
-savjeeCoin.minePendingTransactions('xavier-address');
-
-console.log('\nBalance of xavier is' , savjeeCoin.getBalanceOfAdress('xavier-address'));
-
+console.log('\nBalance of terrychia is' , terryCoin.getBalanceOfAdress('terrychia-address'));
 
 console.log('\nStarting the miner again....');
-savjeeCoin.minePendingTransactions('xavier-address');
+terryCoin.minePendingTransactions('terrychia-address');
 
-console.log('\nBalance of xavier is' , savjeeCoin.getBalanceOfAdress('xavier-address'));
+console.log('\nBalance of terrychia is' , terryCoin.getBalanceOfAdress('terrychia-address'));
+
+
+console.log('\nStarting the miner again....');
+terryCoin.minePendingTransactions('terrychia-address');
+
+console.log('\nBalance of terrychia is' , terryCoin.getBalanceOfAdress('terrychia-address'));
 
 // console.log("Mining block 1.......");
-// savjeeCoin.addBlock(new Block(1, "20/07/2017", { amount: 4 }));
+// terryCoin.addBlock(new Block(1, "20/07/2017", { amount: 4 }));
 
 // console.log("Mining block 2.......");
-// savjeeCoin.addBlock(new Block(2, "20/07/2017", { amount: 8 }));
+// terryCoin.addBlock(new Block(2, "20/07/2017", { amount: 8 }));
 
 
 
-// console.log("BlockChain Valid? " + savjeeCoin.isChainValid());
+// console.log("BlockChain Valid? " + terryCoin.isChainValid());
 
-// savjeeCoin.chain[1].data = {amount: 100};
-// savjeeCoin.chain[1].hash = savjeeCoin.chain[1].calculateHash();
+// terryCoin.chain[1].data = {amount: 100};
+// terryCoin.chain[1].hash = terryCoin.chain[1].calculateHash();
 
-// console.log("BlockChain Valid? " + savjeeCoin.isChainValid());
+// console.log("BlockChain Valid? " + terryCoin.isChainValid());
 
-//console.log(JSON.stringify(savjeeCoin, null, 4));
+//console.log(JSON.stringify(terryCoin, null, 4));
